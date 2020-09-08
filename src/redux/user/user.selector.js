@@ -1,5 +1,9 @@
 import { createSelector } from "reselect";
 
+/*********************************************************
+              ^^^^^^^^^^^IMPORTS^^^^^^^^^^^^^^^
+**********************************************************/
+
 const selectUser = (state) => state.user;
 
 export const selectCurrentUser = createSelector(
