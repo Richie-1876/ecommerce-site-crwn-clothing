@@ -9,7 +9,7 @@ import CheckoutPage from "./pages/checkout/checkout.component";
 import Header from "./components/header/header.component";
 
 import { selectCurrentUser } from "./redux/user/user.selector";
-import "./App.css";
+import { GlobalStyle } from "./global.styles";
 
 import { checkUserSession } from "./redux/user/user.actions";
 
@@ -24,6 +24,7 @@ const App = ({ checkUserSession, currentUser }) => {
 
   return (
     <div>
+      <GlobalStyle />
       <Header />
       <Switch>
         <Route exact path="/" component={HomePage} />
